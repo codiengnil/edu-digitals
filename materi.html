@@ -1,0 +1,255 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="css/bootstrap.css" rel="stylesheet">
+    <style>
+      .custom-bg {
+        background-image: url('WEB/bg-2.jpg');
+        background-size: cover;
+        background-position: center;
+        background-attachment: fixed;
+        height: 100vh; /* Tinggi penuh sesuai layar */
+      }
+
+      /* Menghilangkan garis pinggir card */
+      .card {
+        border: none;
+      }
+
+      /* Gaya header modal agar sama dengan modal 5 */
+      .modal-header {
+        background-color: orange;
+      }
+
+      .modal-body {
+        font-size: 1.2rem;
+        padding: 15px;
+      }
+     .bg-welkom {
+            background-image: url('https://i.pinimg.com/736x/d3/13/cf/d313cf37734ea7cfd3282eb2a8f40e7d.jpg');
+            background-size: cover;
+            background-position: center;
+        }
+    </style>
+    <title>Bootstrap demo</title>
+  </head>
+  <body class="custom-bg">
+      
+      
+    <br>
+    <br>
+    <br>
+    <div class="p-5 mx-5 rounded-5 bg-welkom">
+        <div class="ps-5">
+            <h1 style=" ext-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);" class="fw-bold text-center poppins text-primary">"Tuhan Punya Rencana untuk Hidupmu!"</h1>
+        <br>
+        <h4 style="color: whitesmoke; text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);" class="text-center">Hari ini kita akan belajar tentang seorang pahlawan yang dipilih Tuhan sejak sebelum dia lahir. Cerita ini ada di Alkitab, di kitab Hakim-hakim pasal 13. Kisah ini mengingatkan kita bahwa Tuhan punya rencana luar biasa untuk setiap orang, bahkan sejak kita masih dalam kandungan. Yuk, kita dengarkan ceritanya bersama-sama!</h4>
+     </div>
+    </div>
+    <br>
+    <br>
+    <br>
+      
+      
+    <div class="container py-5" style="padding-top: 50px; border: 5px solid orange; border-radius: 10px;">
+      <!-- Card 1 -->
+      <div class="card mb-3 rounded-3" style="max-width: 800px; background-color: orange; margin: 10px auto;">
+        <div class="row g-0">
+          <div class="col-md-4">
+            <img src="WEB/alkitab.jpg" class="img-fluid rounded-start" alt="..." style="width: 200px; height: 200px;">
+          </div>
+          <div class="col-md-8">
+            <div class="card-body" style="margin-left: -60px; padding-left: 0;">
+              <p class="card-title fw-bold fs-5 text-white">
+                <br>
+                <br>
+                Orang Israel melakukan apa yang jahat di mata Tuhan.
+              </p>
+              <div class="text-end">
+                  <br>
+                <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal1">
+                  Cerita penuh...
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <br><br>
+      <!-- Card 2 -->
+      <div class="card mb-3 rounded-3" style="max-width: 800px; background-color: orange; margin: 10px auto;">
+        <div class="row g-0">
+          <div class="col-md-4">
+            <img src="WEB/alkitab.jpg" class="img-fluid rounded-start" alt="..." style="width: 200px; height: 200px;">
+          </div>
+          <div class="col-md-8">
+            <div class="card-body" style="margin-left: -60px; padding-left: 0;">
+              <p class="card-title fw-bold fs-5 text-white">
+                Malaikat Tuhan mengunjungi istri Manoah yang tidak bisa memiliki anak dan memberitahukan bahwa ia akan memiliki seorang anak laki-laki.
+              </p>
+              <div class="text-end">
+                <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal2">
+                  Cerita penuh...
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <br><br>
+      <!-- Card 3 -->
+      <div class="card mb-3 rounded-3" style="max-width: 800px; background-color: orange; margin: 10px auto;">
+        <div class="row g-0">
+          <div class="col-md-4">
+            <img src="WEB/alkitab.jpg" class="img-fluid rounded-start" alt="..." style="width: 200px; height: 200px;">
+          </div>
+          <div class="col-md-8">
+            <div class="card-body" style="margin-left: -60px; padding-left: 0;">
+              <p class="card-title fw-bold fs-5 text-white">
+                Perempuan itu menceritakan penglihatan kepada suaminya, Manoah, dan mereka berdua mencari petunjuk lebih lanjut dari Tuhan.
+              </p>
+              <div class="text-end">
+                <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal3">
+                  Cerita penuh...
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <br><br>
+      <!-- Card 4 -->
+      <div class="card mb-3 rounded-3" style="max-width: 800px; background-color: orange; margin: 10px auto;">
+        <div class="row g-0">
+          <div class="col-md-4">
+            <img src="WEB/alkitab.jpg" class="img-fluid rounded-start" alt="..." style="width: 200px; height: 200px;">
+          </div>
+          <div class="col-md-8">
+            <div class="card-body" style="margin-left: -60px; padding-left: 0;">
+              <p class="card-title fw-bold fs-5 text-white">
+                Manoah ingin memberi penghormatan kepada malaikat, namun malaikat memberi petunjuk untuk mempersembahkan korban kepada Tuhan.
+              </p>
+              <div class="text-end">
+                <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal4">
+                  Cerita penuh...
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <br><br>
+      <!-- Card 5 -->
+      <div class="card mb-3 rounded-3" style="max-width: 800px; background-color: orange; margin: 10px auto;">
+        <div class="row g-0">
+          <div class="col-md-4">
+            <img src="WEB/alkitab.jpg" class="img-fluid rounded-start" alt="..." style="width: 200px; height: 200px;">
+          </div>
+          <div class="col-md-8">
+            <div class="card-body" style="margin-left: -60px; padding-left: 0;">
+              <p class="card-title fw-bold fs-5 text-white">
+                Malaikat menghilang, dan Manoah serta istrinya menyadari bahwa mereka telah melihat Tuhan. Mereka pun memiliki anak laki-laki yang diberi nama Simson.
+              </p>
+              <div class="text-end">
+                <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal5">
+                  Cerita penuh...
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Modal 1 -->
+    <div class="modal fade" id="exampleModal1" tabindex="-1" aria-labelledby="exampleModalLabel1" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h1 class="modal-title fs-5" id="exampleModalLabel1">Hakim-Hakim 13:1</h1>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body fs-4">
+            <p class="p-3">
+            Dalam ayat ini, dikatakan bahwa orang Israel kembali melakukan kejahatan di mata Tuhan, yang menyebabkan mereka diserahkan ke tangan orang Filistin selama 40 tahun. Ini mengajarkan kita bahwa ketidaktaatan kepada Tuhan membawa akibat yang serius, seperti penderitaan.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Modal 2 -->
+    <div class="modal fade" id="exampleModal2" tabindex="-1" aria-labelledby="exampleModalLabel2" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h1 class="modal-title fs-5" id="exampleModalLabel2">Hakim-Hakim 13:2-5</h1>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body fs-4">
+            <p class="p-3">
+            Di Zora, ada seorang perempuan yang tidak bisa memiliki anak. Malaikat Tuhan datang padanya dan memberikan kabar gembira bahwa dia akan melahirkan seorang anak laki-laki yang memiliki tugas khusus untuk menyelamatkan bangsa Israel dari orang Filistin. Tuhan dapat memberi berkat dan janji-janji-Nya meskipun situasi kita tampak sulit, seperti halnya dengan perempuan ini yang mandul.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Modal 3 -->
+    <div class="modal fade" id="exampleModal3" tabindex="-1" aria-labelledby="exampleModalLabel3" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h1 class="modal-title fs-5" id="exampleModalLabel3">Hakim-Hakim 13:6-14</h1>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body fs-4">
+            <p class="p-3">
+            Setelah mendengar janji Tuhan, perempuan itu menceritakan kepada suaminya. Manoah berdoa kepada Tuhan agar malaikat itu datang lagi dan memberi petunjuk lebih lanjut. Malaikat kembali datang dan memberikan arahan khusus tentang cara anak mereka harus dibesarkan. Anak itu harus terpisah untuk Tuhan, tidak boleh minum anggur, dan harus menjaga hidupnya tetap suci. Ini menunjukkan pentingnya mendidik anak dalam jalan Tuhan dan mengikuti petunjuk-Nya.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Modal 4 -->
+    <div class="modal fade" id="exampleModal4" tabindex="-1" aria-labelledby="exampleModalLabel4" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h1 class="modal-title fs-5" id="exampleModalLabel4">Hakim-Hakim 13:15-20</h1>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body fs-4">
+            <p class="p-3">
+            Manoah merasa sangat terkesan dan ingin menghormati malaikat dengan memberi hadiah atau korban. Namun, malaikat mengarahkan mereka untuk mempersembahkan korban kepada Tuhan, bukan kepada dirinya. Ini mengajarkan kita bahwa Tuhan yang patut dihormati dan dipuji, dan kita harus selalu mengarahkan penghormatan kita kepada-Nya, bukan kepada manusia.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Modal 5 -->
+    <div class="modal fade" id="exampleModal5" tabindex="-1" aria-labelledby="exampleModalLabel5" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h1 class="modal-title fs-5" id="exampleModalLabel5">Hakim-Hakim 13:21-24</h1>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body fs-4">
+            <div class="p-3">
+            Setelah malaikat menghilang, Manoah dan istrinya menyadari bahwa mereka telah bertemu dengan Tuhan. Mereka bersyukur dan anak yang lahir diberi nama Simson, yang berarti "matahari." Tuhan memberkati Simson, dan dia tumbuh menjadi anak yang diberkati. Ini menunjukkan bagaimana Tuhan memegang kendali atas kehidupan kita, memberikan kita berkat, dan merencanakan masa depan kita dengan penuh kasih.
+                </div>
+          </div>
+        </div>
+      </div>
+    </div>
+      <br>
+      <br>
+    <script src="js/bootstrap.js"></script>
+    <script src="js/popper.min.js"></script>
+  </body>
+</html>
