@@ -32,6 +32,61 @@
             background-size: cover;
             background-position: center;
         }
+     .text-stroke {
+            color: black;
+            -webkit-text-stroke: 1px black;
+        }
+    @media (max-width: 768px) {
+    .p-5.mx-5 {
+      padding: 2rem 1rem !important; /* Kurangi padding di mobile */
+    }
+
+    .ps-5 h1 {
+      font-size: 1.8rem !important; /* Sesuaikan ukuran heading */
+    }
+
+    .ps-5 h4 {
+      font-size: 1rem !important; /* Sesuaikan ukuran teks deskripsi */
+      line-height: 1.5 !important;
+    }
+
+    .card {
+      margin: 1rem auto; /* Beri ruang antar card */
+      max-width: 100% !important; /* Sesuaikan dengan lebar layar */
+    }
+
+    .card-body {
+      margin-left: 0 !important; /* Hilangkan margin kiri */
+      padding: 1rem !important; /* Kurangi padding */
+      text-align: center !important; /* Rata tengah pada mobile */
+    }
+
+    .card-body p {
+      font-size: 0.9rem !important; /* Perkecil teks untuk mobile */
+    }
+
+    .btn {
+      font-size: 0.8rem !important; /* Perkecil ukuran font tombol */
+      padding: 0.5rem 1rem !important; /* Sesuaikan padding */
+    }
+
+    .card img {
+      width: 100% !important; /* Gambar memenuhi ruang kolom */
+      height: auto !important; /* Biarkan tinggi otomatis */
+    }
+
+    .modal-body {
+      font-size: 1rem !important; /* Sesuaikan ukuran teks modal */
+    }
+    .ps-5 h1 {
+      padding-right: 30px !important;
+      color: aqua !important; 
+    }
+    .ps-5 h4 {
+      text-align: justify !important; /* Membuat teks rata kiri-kanan untuk estetika */
+      padding-right: 30px !important;
+    }
+  }
     </style>
     <title>Materi Khotbah</title>
   </head>
@@ -43,9 +98,9 @@
     <br>
     <div class="p-5 mx-5 rounded-5 bg-welkom">
         <div class="ps-5">
-            <h1 style=" ext-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);" class="fw-bold text-center poppins text-primary">"Tuhan Punya Rencana untuk Hidupmu!"</h1>
+            <h1 style=" ext-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);" class="fw-bold text-center poppins text-primary text-stroke">"Tuhan Punya Rencana untuk Hidupmu!"</h1>
         <br>
-        <h4 style="color: whitesmoke; text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);" class="text-center">Hari ini kita akan belajar tentang seorang pahlawan yang dipilih Tuhan sejak sebelum dia lahir. Cerita ini ada di Alkitab, di kitab Hakim-hakim pasal 13. Kisah ini mengingatkan kita bahwa Tuhan punya rencana luar biasa untuk setiap orang, bahkan sejak kita masih dalam kandungan. Yuk, kita dengarkan ceritanya bersama-sama!</h4>
+        <h4 style="color: white; text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);" class="text-center">Hari ini kita akan belajar tentang seorang pahlawan yang dipilih Tuhan sejak sebelum dia lahir. Cerita ini ada di Alkitab, di kitab Hakim-hakim pasal 13. Kisah ini mengingatkan kita bahwa Tuhan punya rencana luar biasa untuk setiap orang, bahkan sejak kita masih dalam kandungan. Yuk, kita dengarkan ceritanya bersama-sama!</h4>
      </div>
     </div>
     <br>
@@ -65,7 +120,7 @@
               <p class="card-title fw-bold fs-5 text-white">
                 <br>
                 <br>
-                Orang Israel melakukan apa yang jahat di mata Tuhan. (Hakim-Hakim 13:1)
+                Orang Israel melakukan apa yang jahat di mata Tuhan.
               </p>
               <div class="text-end">
                   <br>
@@ -87,7 +142,7 @@
           <div class="col-md-8">
             <div class="card-body" style="margin-left: -60px; padding-left: 0;">
               <p class="card-title fw-bold fs-5 text-white">
-                Malaikat Tuhan mengunjungi istri Manoah yang tidak bisa memiliki anak dan memberitahukan bahwa ia akan memiliki seorang anak laki-laki. Hakim-Hakim 13:2-5
+                Malaikat Tuhan mengunjungi istri Manoah yang tidak bisa memiliki anak dan memberitahukan bahwa ia akan memiliki seorang anak laki-laki.
               </p>
               <div class="text-end">
                 <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal2">
@@ -108,7 +163,7 @@
           <div class="col-md-8">
             <div class="card-body" style="margin-left: -60px; padding-left: 0;">
               <p class="card-title fw-bold fs-5 text-white">
-                Perempuan itu menceritakan penglihatan kepada suaminya, Manoah, dan mereka berdua mencari petunjuk lebih lanjut dari Tuhan. (Hakim-Hakim 13:6-14)
+                Perempuan itu menceritakan penglihatan kepada suaminya, Manoah, dan mereka berdua mencari petunjuk lebih lanjut dari Tuhan.
               </p>
               <div class="text-end">
                 <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal3">
@@ -129,7 +184,7 @@
           <div class="col-md-8">
             <div class="card-body" style="margin-left: -60px; padding-left: 0;">
               <p class="card-title fw-bold fs-5 text-white">
-                Manoah ingin memberi penghormatan kepada malaikat, namun malaikat memberi petunjuk untuk mempersembahkan korban kepada Tuhan. (Hakim-Hakim 13:15-20)
+                Manoah ingin memberi penghormatan kepada malaikat, namun malaikat memberi petunjuk untuk mempersembahkan korban kepada Tuhan.
               </p>
               <div class="text-end">
                 <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal4">
@@ -150,7 +205,7 @@
           <div class="col-md-8">
             <div class="card-body" style="margin-left: -60px; padding-left: 0;">
               <p class="card-title fw-bold fs-5 text-white">
-                Malaikat menghilang, dan Manoah serta istrinya menyadari bahwa mereka telah melihat Tuhan. Mereka pun memiliki anak laki-laki yang diberi nama Simson. (Hakim-Hakim 13:21-24)
+                Malaikat menghilang, dan Manoah serta istrinya menyadari bahwa mereka telah melihat Tuhan. Mereka pun memiliki anak laki-laki yang diberi nama Simson.
               </p>
               <div class="text-end">
                 <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal5">
