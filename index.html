@@ -52,6 +52,74 @@
             margin: 0;
             height: 100vh;
         }
+        .carousel-inner {
+      max-width: 2000px;
+      max-height: 550px;
+      margin: 0 auto; /* Agar carousel tetap di tengah */
+    }
+    .carousel-item img, 
+    .carousel-item video {
+      width: 2000px;
+      height: 600px;
+      object-fit: cover; /* Agar gambar/video sesuai rasio 1280x720 */
+    }
+        @media (max-width: 768px) {
+        .custom-bg {
+            background-attachment: scroll;
+        }
+        .carousel-inner {
+    max-width: 1280px;
+    margin: 0 auto;
+  }
+
+  .carousel-item img, 
+  .carousel-item video {
+    width: 100%; /* Menyesuaikan lebar carousel */
+    height: auto; /* Menjaga rasio gambar dan video */
+    object-fit: cover; /* Agar gambar/video tetap proporsional */
+  }
+        .btn {
+            width: 100%;
+        }
+        img {
+            max-width: 100%;
+            height: auto;
+        }
+        .rounded-pill {
+            border-radius: 30px;
+            padding: 1rem;
+        }
+        .p-5 {
+            padding: 2rem !important;
+        }
+        .mx-5 {
+            margin-left: 1rem !important;
+            margin-right: 1rem !important;
+        }
+        table {
+            overflow-x: auto;
+            display: block;
+        }
+         .rounded-pill {
+            border-radius: 30px !important; /* Sama dengan rounded-5 */
+        }
+        .rounded-pill.rounded-5, .rounded-5 {
+            padding-left: 1.5rem !important;
+            padding-right: 1.5rem !important;
+            padding-top: 2rem !important;
+            padding-bottom: 2rem !important;
+            text-align: center; /* Tambahkan jika teks perlu di tengah */
+        }
+        .ps-4, .ps-5 {
+            padding-left: 1.5rem !important; /* Kurangi padding kiri pada mobile */
+            padding-right: 1.5rem !important; /* Tambahkan jika diperlukan */
+        }
+        a.btn.mt-3 {
+            width: 90%; /* Sesuaikan tombol menjadi 90% lebar layar */
+            max-width: 300px; /* Batasi lebar maksimal agar tidak terlalu besar */
+            margin: 0 auto; /* Pusatkan tombol */
+        }
+    }
     </style>
     <title>Edu Digital</title>
 </head>
@@ -124,20 +192,52 @@
         <div class="text-center">
         <h4 style="color: royalblue;">Apakah kalian sudah mengerti materi tadi? Ayo jawab pertanyaan-pertanyaan ini!</h4>
         <br>
-        <a class="btn btn-primary" href="https://quizizz.com/admin/quiz/6747f1059bbcf7ad1821ce43" role="button">Akses Pertanyaan</a>
+        <a class="btn btn-primary" href="#" role="button">Akses Pertanyaan</a>
         </div>
      </div>
     </div>
     <br>
     <br>
     <br>
-    <div class="p-5 mx-5 rounded-pill bg-welkom">
+    <div class="p-5 mx-5 rounded-5 bg-welkom">
         <div class="ps-5">
             <h3 style="color: darkorange;" class="fw-bold text-center poppins">Galeri Kami</h3>
         <br>
         <h4 style="color: royalblue;">Momen Edukasi Iman dan Teknologi</h4>
         <p class="fs-5">Galeri ini menghadirkan dokumentasi kegiatan edukasi kekristenan yang mengintegrasikan iman dan IPTEKS.</p>
      </div>
+        
+        <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img src="WEB/satu.jpg" class="d-block w-100 rounded-4" alt="Slide 1">
+      </div>
+      <div class="carousel-item">
+        <img src="WEB/dua.jpg" class="d-block w-100 rounded-4" alt="Slide 2">
+      </div>
+      <div class="carousel-item">
+        <img src="WEB/tiga.jpg" class="d-block w-100 rounded-4" alt="Slide 3">
+      </div>
+      <div class="carousel-item">
+        <img src="WEB/empat.jpg" class="d-block w-100 rounded-4" alt="Slide 4">
+      </div>
+      <div class="carousel-item">
+        <video class="d-block w-100 rounded-4" autoplay muted loop>
+          <source src="video.mp4" type="video/mp4">
+          Your browser does not support the video tag.
+        </video>
+      </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
+        
     </div>
     <br>
     <br>
@@ -213,7 +313,7 @@
         <div class="ps-5">
             <h3 style="color: darkorange;" class="fw-bold text-center poppins">Terima Kasih</h3>
         <br>
-        <div class="text-center">
+        <div class=" text center">
             <p class="fs-5">Terima kasih atas kunjungan anda! Kami menyadari bahwa situs ini mungkin belum sempurna, dan jika terdapat kekurangan atau kesalahan, kami mohon maaf yang sebesar-besarnya. Masukan dan saran anda sangat berarti. Sekian hasil dari kelompok kami. Terima kasih</p>
         </div>
      </div>
