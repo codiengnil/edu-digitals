@@ -57,11 +57,15 @@
       max-height: 550px;
       margin: 0 auto; /* Agar carousel tetap di tengah */
     }
-    .carousel-item img, 
-    .carousel-item video {
+    .carousel-item img {
       width: 2000px;
       height: 600px;
       object-fit: cover; /* Agar gambar/video sesuai rasio 1280x720 */
+    }
+    .carousel-item video {
+      width: 1200px;
+      height: 550px;
+      object-fit: cover;  
     }
         @media (max-width: 768px) {
         .custom-bg {
@@ -192,7 +196,7 @@
         <div class="text-center">
         <h4 style="color: royalblue;">Apakah kalian sudah mengerti materi tadi? Ayo jawab pertanyaan-pertanyaan ini!</h4>
         <br>
-        <a class="btn btn-primary" href="https://quizizz.com/join?gc=493415&source=liveDashboard" role="button">Akses Pertanyaan</a>
+        <a class="btn btn-primary" href="#" role="button">Akses Pertanyaan</a>
         </div>
      </div>
     </div>
@@ -209,34 +213,34 @@
         
         <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
     <div class="carousel-inner">
-      <div class="carousel-item active">
-        <img src="WEB/satu.jpg" class="d-block w-100 rounded-4" alt="Slide 1">
-      </div>
-      <div class="carousel-item">
-        <img src="WEB/dua.jpg" class="d-block w-100 rounded-4" alt="Slide 2">
-      </div>
-      <div class="carousel-item">
-        <img src="WEB/tiga.jpg" class="d-block w-100 rounded-4" alt="Slide 3">
-      </div>
-      <div class="carousel-item">
-        <img src="WEB/empat.jpg" class="d-block w-100 rounded-4" alt="Slide 4">
-      </div>
-      <div class="carousel-item">
-        <video class="d-block w-100 rounded-4" autoplay muted loop>
-          <source src="video.mp4" type="video/mp4">
-          Your browser does not support the video tag.
-        </video>
-      </div>
+        <div class="carousel-item active">
+            <img src="WEB/satu.jpg" class="d-block w-100 rounded-4" alt="Slide 1">
+        </div>
+        <div class="carousel-item">
+            <img src="WEB/dua.jpg" class="d-block w-100 rounded-4" alt="Slide 2">
+        </div>
+        <div class="carousel-item">
+            <img src="WEB/tiga.jpg" class="d-block w-100 rounded-4" alt="Slide 3">
+        </div>
+        <div class="carousel-item">
+            <img src="WEB/empat.jpg" class="d-block w-100 rounded-4" alt="Slide 4">
+        </div>
+        <div class="carousel-item" id="video-slide">
+            <video class="d-block w-100 rounded-4" controls>
+                <source src="WEB/vid.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+        </div>
     </div>
     <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="prev">
-      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-      <span class="visually-hidden">Previous</span>
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
     </button>
     <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="next">
-      <span class="carousel-control-next-icon" aria-hidden="true"></span>
-      <span class="visually-hidden">Next</span>
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
     </button>
-  </div>
+</div>
         
     </div>
     <br>
@@ -323,5 +327,19 @@
     <br>
     <script src="js/bootstrap.js"></script>
     <script src="js/popper.min.js"></script>
+    <script>
+    const carousel = document.querySelector('#carouselExampleAutoplaying');
+    const videoSlide = document.querySelector('#video-slide video');
+
+    carousel.addEventListener('slid.bs.carousel', (e) => {
+        if (e.relatedTarget === videoSlide.closest('.carousel-item')) {
+            carousel.classList.remove('carousel');
+            videoSlide.play();
+        } else {
+            carousel.classList.add('carousel');
+            videoSlide.pause();
+        }
+    });
+</script>
 </body>
 </html>
